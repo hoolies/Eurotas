@@ -1,0 +1,55 @@
+{
+  "host": "0.0.0.0",
+  "port": 8080,
+  "control_pin": "CHANGE-ME",
+
+  "hls_dir": "/tmp/eurotas-hls",
+  "work_dir": "/tmp/eurotas-work",
+
+  "ffmpeg": "ffmpeg",
+  "ffprobe": "ffprobe",
+  "yt_dlp": "yt-dlp",
+
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "video_bitrate": "6000k",
+  "video_encoder": "libx264",
+  "encoder_init_args": [],
+
+  "hls_time": 2,
+  "offsets": {
+    "tutorial": 8,
+    "slideshow": 8,
+    "testpattern": 8,
+    "camera": 6,
+    "file": 12,
+    "youtube_live": 45,
+    "youtube_vod": 30
+  },
+  "max_offset": 300,
+
+  "failover_source": "tutorial",
+  "stall_timeout": 20,
+
+  "presets": {
+    "weather": {
+      "kind": "youtube_live",
+      "title": "The Weather Network (Live)",
+      "url": "PASTE_YOUR_WEATHER_NETWORK_LIVE_URL_HERE"
+    }
+  },
+
+  "slideshow": {
+    "dir": "/path/to/your/images",
+    "seconds_per_image": 10,
+    "audio": ""
+  },
+
+  "camera": {
+    "video_device": "/dev/video0",
+    "audio_source": "default",
+    "input_size": "1280x720",
+    "input_fps": 30
+  }
+}

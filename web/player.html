@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Eurotas Channel</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="player-body">
+  <div id="stage">
+    <video id="video" playsinline autoplay></video>
+    <div id="overlay" class="overlay hidden">
+      <button id="enableBtn" class="big-btn">Tap to start the channel</button>
+    </div>
+    <div id="status" class="status-badge">connecting...</div>
+  </div>
+  <script src="/static/vendor/hls.min.js"></script>
+  <script src="/static/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Python dependencies (install with: python3 -m pip install -r requirements.txt)
+fastapi>=0.110
+uvicorn[standard]>=0.27
+
+# External command-line tools required at runtime (NOT pip-managed here):
+#   - ffmpeg / ffprobe  (system package: ffmpeg)
+# And these Python CLIs (installed by scripts/setup.sh, or pip-install yourself):
+yt-dlp
+streamlink

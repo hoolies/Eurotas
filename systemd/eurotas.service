@@ -1,0 +1,18 @@
+[Unit]
+Description=Eurotas local broadcast hub
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Adjust User and paths to your install location.
+User=eurotas
+WorkingDirectory=/opt/eurotas
+ExecStart=/usr/bin/python3 /opt/eurotas/run.py -c /opt/eurotas/config.json
+Restart=always
+RestartSec=3
+# The HLS buffer lives in RAM; give the process access to /tmp.
+PrivateTmp=false
+
+[Install]
+WantedBy=multi-user.target

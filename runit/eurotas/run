@@ -1,0 +1,6 @@
+#!/bin/sh
+# Void Linux / runit service for Eurotas.
+# Install:  ln -s /opt/eurotas/runit/eurotas /var/service/eurotas
+exec 2>&1
+cd /opt/eurotas || exit 1
+exec chpst -u eurotas python3 /opt/eurotas/run.py -c /opt/eurotas/config.json

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eurotas Control</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="control-body">
+  <main class="panel">
+    <h1>Eurotas <span class="sub">control</span></h1>
+
+    <section id="login" class="card hidden">
+      <h2>Enter PIN</h2>
+      <div class="row">
+        <input id="pin" type="password" inputmode="numeric" placeholder="PIN" autocomplete="off" />
+        <button id="loginBtn" class="btn primary">Unlock</button>
+      </div>
+      <p id="loginErr" class="err"></p>
+    </section>
+
+    <section id="console" class="hidden">
+      <div id="now" class="card now">
+        <div class="now-title">Now playing</div>
+        <div id="nowSource" class="now-source">-</div>
+        <div id="nowMeta" class="now-meta"></div>
+      </div>
+
+      <div class="card">
+        <h2>Pick a source</h2>
+        <div id="presets" class="presets"></div>
+        <div id="forms" class="forms"></div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <button id="stopBtn" class="btn">Return to tutorial</button>
+          <a class="btn ghost" href="/" target="_blank">Open channel view</a>
+        </div>
+      </div>
+
+      <details class="card">
+        <summary>Diagnostics</summary>
+        <pre id="log" class="log"></pre>
+      </details>
+    </section>
+  </main>
+  <script src="/static/control.js"></script>
+</body>
+</html>

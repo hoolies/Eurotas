@@ -1,0 +1,14 @@
+{
+  "host": "127.0.0.1",
+  "port": 8099,
+  "control_pin": "1234",
+  "hls_dir": "/home/hoolies/workspace/eurotas/.run/hls",
+  "work_dir": "/home/hoolies/workspace/eurotas/.run/work",
+  "width": 640,
+  "height": 360,
+  "fps": 25,
+  "video_bitrate": "1200k",
+  "video_encoder": "libx264",
+  "hls_time": 2,
+  "stall_timeout": 20
+}

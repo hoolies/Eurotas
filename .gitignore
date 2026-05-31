@@ -1,0 +1,9 @@
+# runtime / scratch
+.run/
+config.json
+config.test.json
+
+# python
+__pycache__/
+*.pyc
+.pydeps/
